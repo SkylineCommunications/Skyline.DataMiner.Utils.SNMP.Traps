@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="Utils.SNMP.Traps.Tests/Utils.SNMP.Traps.Tests.csproj" />
+  <Project Path="Utils.SNMP.Traps/Utils.SNMP.Traps.csproj" />
+</Solution>

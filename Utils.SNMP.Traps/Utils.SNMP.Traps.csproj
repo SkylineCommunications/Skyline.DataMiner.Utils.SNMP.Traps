@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>Skyline.DataMiner.Utils.SNMP.Traps</AssemblyName>
+    <RootNamespace>Skyline.DataMiner.Utils.SNMP.Traps</RootNamespace>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Version>1.0.1</Version>
+    <PackageTags>Skyline;DataMiner</PackageTags>
+    <PackageProjectUrl>https://skyline.be</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageIcon>Icon.png</PackageIcon>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>SkylineCommunications</Authors>
+    <Company>Skyline Communications</Company>
+    <Description>
+      <![CDATA[Library providing common methods used to parse SNMP traps.
+Code Entry Point: TrapInfo trap = TrapInfo.FromTrapData(trapInfo);]]>
+    </Description>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/SkylineCommunications/Skyline.DataMiner.Utils.SNMP.Traps</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
+    <None Include="nuget\Icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Skyline.DataMiner.CICD.CSharpAnalysis.Analyzer" Version="2.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Skyline.DataMiner.Utils.SecureCoding.Analyzers" Version="2.2.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Skyline.DataMiner.Utils.SNMP.Traps.Tests" />
+  </ItemGroup>
+
+</Project>
